@@ -29,10 +29,29 @@ body {
 
 ul {
    list-style: none;
+   padding: 0;
+   margin: 0;
 }
+ h1,
+ h2,
+ h3,
+ p {
+   margin-top: 0;
+   margin-bottom: 0;
+ }
 
+/*styles container*/
 
+.container {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
 
+   margin-left: auto;
+   margin-right: auto;
+
+   ;
+}
 /* style header*/
 
 .logo {
@@ -43,20 +62,44 @@ ul {
    text-decoration: none;
    color: var(--accent-color);
    
+   margin-top: 24px;
+}
+.logo-nav {
+   display: flex;
+
+}
+.main-header{
+   display: flex;
+   align-items: center;
+   
 }
 .accent {
    color: #000000;
 }
 
-.site-nav a{
+.site-nav {
+   display: flex;
+   margin-left: 93px;
+}
+
+.site-nav .link{
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
    text-decoration: none;
    color: var(--title-text-color);
+
+   
 }
 
+.site-nav .list:not(:last-child) {
+   margin-right: 50px;
+}
 .site-nav a:hover,
 .site-nav a:focus {
    color: var(--accent-color);
@@ -68,6 +111,14 @@ ul {
 
 .auth-nav .current {
    color: var(--accent-color);
+}
+
+.auth-nav{
+   display: flex;
+   margin-left: auto;
+}
+.auth-nav .list:not(:last-child){
+   margin-right: 50px;
 }
 
 .auth-nav a {
@@ -94,10 +145,17 @@ ul {
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color: var(--primary-white-color);
+
+   margin-bottom: 30px;
+
+   
 }
 
 .hero {
    background-color: #2F303A;
+
+   text-align: center;
+   margin-bottom: 43px;
 }
 
 /* скрытие заголовка*/
@@ -131,6 +189,9 @@ ul {
    line-height: 1.14;
    text-transform: uppercase;
    color: var(--title-text-color);
+
+   margin-bottom: 10px;
+
 }
 
  /* styles team */
@@ -161,12 +222,20 @@ ul {
    font-size: 16px;
    line-height: 1.9;
    align-items: center;
-   text-align: center;
+   
    letter-spacing: 0.06em;
    cursor:pointer;
    font-family: inherit;
    color: var(--primary-white-color);
    background-color: var(--accent-color);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .features-button {
