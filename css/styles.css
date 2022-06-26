@@ -97,11 +97,16 @@ address {
    line-height: 1.2;
    text-decoration: none;
    color: var(--accent-color);
+
+   margin-right: 93px;
    
-   margin-top: 24px;
+   
 }
 .logo-nav {
    display: flex;
+   align-items: center;
+
+   
 
 }
 .main-header{
@@ -114,7 +119,9 @@ address {
 
 .site-nav {
    display: flex;
-   margin-left: 93px;
+  /* margin-left: 93px;*/
+
+   
 }
 
 .site-nav .link{
@@ -144,9 +151,9 @@ address {
    color: var(--accent-color);
 }
 
-.auth-nav .current {
+/*.auth-nav .current {
    color: var(--accent-color);
-}
+}*/
 
 .auth-nav{
    display: flex;
@@ -172,6 +179,13 @@ address {
 
 /*  style hero*/
 
+.hero {
+   background-color: #2F303A;
+   text-align: center;
+   
+   padding: 200px 0;
+}
+
 .hero-title {
    font-weight: 900;
    font-size: 44px;
@@ -181,16 +195,13 @@ address {
    text-transform: uppercase;
    color: var(--primary-white-color);
 
-   margin-bottom: 30px;
-
    
+   width: 696px;
+   margin-left: 600px;
+   
+   margin-bottom: 30px;
 }
 
-.hero {
-   background-color: #2F303A;
-   text-align: center;
-   margin-bottom: 73px;
-}
 
 /* скрытие заголовка*/
 
@@ -211,13 +222,7 @@ address {
 
 /*styles feature*/
 
-.features.section {
-   padding-top: 0;
-   padding-bottom: 0;
-}
-/*.feature-description {
-   margin-bottom: 94px;
-}*/
+
 
 .features-list {
    display: flex;
@@ -238,6 +243,9 @@ address {
 }
 /*style about*/
 
+.about {
+   padding-top: 0;
+}
 .about-list {
    display: flex;
    flex-wrap: wrap;
@@ -310,14 +318,19 @@ address {
    color: var(--title-text-color);
 
    text-align: center;
-   margin-top: 30px;
+   margin-bottom: 10px;
+   
 }
-
+.team-list {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 .team-description {
    font-size: 16px;
    line-height: 1.2;
    
    text-align: center;
+   margin: 0;
 
 }
 /*style  button*/
@@ -340,6 +353,7 @@ address {
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 }
 
 .features-button {
@@ -371,18 +385,23 @@ address {
 
 .portfolio-filters {
    display: flex;
-  justify-content: center;
+   justify-content: center;
   
    margin-bottom: 50px;
 }
 
-.portfolio-filters .item {
+.portfolio-filters .item:not(:last-child) {
    margin-right: 8px;
+   padding: 0;
+}
 
-   padding-top: 6px;
-   padding-bottom: 6px ;
-   padding-left: 22px;
-   padding-right: 22px;
+.portfolio-filters .item:last-child {
+   margin-right: 0;
+}
+
+.team-list {
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 /* styles cards*/
 
@@ -393,13 +412,15 @@ address {
    letter-spacing: 0.06em;
    color: var(--title-text-color);
 
-   padding-left: 24px;
-   padding-top: 20px;
-   padding-bottom: 0;
+   margin-bottom: 4px;
 
    
 }
+.cards-list {
+   padding:24px;
 
+   border: 1px solid #EEEEEE;
+}
 .cards {
    display: flex;
    flex-wrap: wrap;
@@ -421,7 +442,7 @@ address {
    font-size: 16px;
    line-height: 1.9;    
    
-   padding-left: 24px;
+   /*padding-left: 24px;*/
    margin-top: 0;
    margin-bottom: 0;
    
@@ -437,6 +458,11 @@ address {
    text-align: center;
    letter-spacing: 0.03em;
    color: var(--title-text-color);
+
+   padding: 6px 22px;
+   border-radius: 4px;
+   border: none;
+   cursor: pointer;
 }
 
 .filters-button.active {
@@ -465,6 +491,7 @@ address {
 .footer {
    background-color: #2F303A;
 
+   
    padding-top: 60px;
    padding-bottom: 60px;
 }
@@ -489,9 +516,15 @@ address {
    color: var(--primary-white-color);
 }
 
-.adress-list {
-   display: flex;
-   flex-direction: column;
+.adress-list .item {
+   
+   margin-bottom: 9px;
+}
 
-   margin-top: 20px;
+.adress-list .item:last-child {
+   margin-bottom: 0;
+}
+.footer .logo {
+   display: block;
+   margin-bottom: 20px;
 }
